@@ -14,13 +14,13 @@ class Stack:
     def push(self, data):
         if not self.is_full():
             self.top += 1
-            return print(self.items.append(data))
+            return self.items.append(data)
 
     def pop(self):
         if not self.is_empty():
             x = self.items.pop(self.top)
             self.top -= 1
-            print(x)
+            return x
 
     def status(self):
         return print(self.items)
