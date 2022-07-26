@@ -14,7 +14,7 @@ class Stack:
     def push(self, data):
         if not self.is_full():
             self.top += 1
-            return self.items.append(data)
+            self.items.append(data)
 
     def pop(self):
         if not self.is_empty():
@@ -23,7 +23,8 @@ class Stack:
             return x
 
     def status(self):
-        return print(self.items)
+        for item in self.items:
+            print(item)
 
 
 # Do not change the following code
